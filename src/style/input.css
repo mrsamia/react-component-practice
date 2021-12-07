@@ -1,0 +1,9 @@
+input{
+    width: 40%;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding-left: 30px;
+    letter-spacing: 0.8px;
+
+}
