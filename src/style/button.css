@@ -3,6 +3,6 @@
     width: 130px;
     border: none;
     border-radius: 8px;
-    background-color: rgb(194, 85, 85);
-    color: white;
+    background-color: rgb(194, 85, 85)!important;
+    color: white !important;
 }

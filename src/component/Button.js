@@ -1,9 +1,9 @@
 import '../style/button.css';
 
-function Button(){
+function Button({bttn=''}){
     return(
         <div>
-            <button className="btn">Read More</button>
+            <button className="btn">{bttn}</button>
         </div>
     );
 
