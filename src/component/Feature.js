@@ -1,48 +1,30 @@
-
-
-function Feature({ h3 = "", p = "" }) {
+function Feature({ h3 = "", p = "", img = "", isLeft = false }) {
   return (
     <div>
+      <div className="row">
+        {isLeft == true && (
+          <div className="col-6">
+            <img src={img} />
+          </div>
+        )}
+
+        <div className="col-6">
+          <h3>{h3}</h3>
+          <p>{p}</p>
+        </div>
+
+        {isLeft == false && (
+          <div className="col-6">
+            <img src={img} />
+          </div>
+        )}
+      </div>
+
+      {/* {isLeft && <img src={img} />}
       <h3>{h3}</h3>
       <p>{p}</p>
-      
+      {!isLeft && <img src={img} />} */}
     </div>
-    
   );
 }
 export default Feature;
-
-
-/*const Na1 = [
-  {
-    h3: " ",
-    img: " ",
-  }
-  
-];
-
-const Na2 = [
-  {
-    img: " ",
-    h3: " ",
-  }
-
-];
-
-function Feature({ type = "" }) {
-  // const items = type === 'nav1' ? Nav1 : Nav2
-  let itm;
-  if (type === "na1") {
-    itm = Na1;
-  } else {
-    itm = Na2;
-  }
-  return (
-    <div>
-      
-      <h3>{itm.h3}</h3>
-      <p>{itm.p}</p>
-    </div>
-  );
-}
-export default Feature;*/
