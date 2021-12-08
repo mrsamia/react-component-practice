@@ -1,20 +1,26 @@
+import "../style/feature.css";
+
 function Feature({ h3 = "", p = "", img = "", isLeft = false }) {
   return (
     <div>
-      <div className="row">
+      <div className="row d-flex align-items-center">
         {isLeft == true && (
-          <div className="col-6">
-            <img src={img} />
+          <div className="col-6 pt-5">
+            <img className="img_size" src={img} />
           </div>
         )}
 
-        <div className="col-6">
-          <h3>{h3}</h3>
-          <p>{p}</p>
+        <div className="col-6 pt-5 ">
+          <div>
+            <h3 className="text-center">{h3}</h3>
+          </div>
+          <div>
+            <p>{p}</p>
+          </div>
         </div>
 
         {isLeft == false && (
-          <div className="col-6">
+          <div className="col-6 pt-5">
             <img src={img} />
           </div>
         )}
