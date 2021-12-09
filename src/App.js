@@ -14,38 +14,7 @@ function App() {
         <Nav type="nav2" />
       </div>
 
-      <h1>React</h1>
-
-      <div>
-        <Input name="username" placeholder="User Name" />
-      </div>
-      <br></br>
-      <div>
-        <Input name="password" placeholder="PassWord" />
-      </div>
-      <br></br>
-      <div>
-        <Input name="address" placeholder="Address" />
-      </div>
-      <br></br>
-      <div>
-        <Input name="number" placeholder="Number" />
-      </div>
-      <br></br>
-
-      <div>
-        <Button bttn="Read More" />
-      </div>
-      <br></br>
-
-      <div>
-        <Button bttn="Submit" />
-      </div>
-      <br></br>
-
-      <div>
-        <Nav type="nav1" />
-      </div>
+      <h1 className="pt-5">Give and get feedback</h1>
 
       <div className="container">
         <Feature
@@ -80,6 +49,40 @@ function App() {
           img={require("./image/feature_1.png").default}
           isLeft={false}
         />
+      </div>
+
+      <div>
+        <h1>Contact From</h1>
+        <div>
+          <Input name="username" placeholder="User Name" />
+        </div>
+        <br></br>
+        <div>
+          <Input name="password" placeholder="PassWord" />
+        </div>
+        <br></br>
+        <div>
+          <Input name="address" placeholder="Address" />
+        </div>
+        <br></br>
+        <div>
+          <Input name="number" placeholder="Number" />
+        </div>
+        <br></br>
+      </div>
+
+      <div className="row">
+        <div className="col-6 d-flex justify-content-end">
+          <Button bttn="Read More" />
+        </div>
+        <div className="col-6 d-flex justify-content-start">
+          <Button bttn="Submit" />
+        </div>
+      </div>
+      <br></br>
+
+      <div>
+        <Nav type="nav1" />
       </div>
     </div>
   );
